@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/public/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="shortcut icon" href="./public/favicon.jpg" type="image/jpg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap"
+            rel="stylesheet"
+        />
+        <meta property="og:title" content="<%- file.filename %>" />
+        <meta property="og:description" content="Size: <%- file.size %> MB" />
+        <meta property="og:type" content="website" />
+
+        <title><%- file.name %> | File Upload</title>
+    </head>
+    <body>
+        <div class="center-screen container">
+            <div>
+                <span class="big-title"><%- file.filename %></span>
+            </div>
+            <div>
+                <span class="small-text">Size: <%- file.size %> MB</span>
+            </div>
+            <div>
+                <span class="small-text">Uploaded at: <%- new Date(file.uploaded_at).toString() %></span>
+            </div>
+            <div>
+                <a class="small-text" href="/dl/<%- file.name %>" class="bn5">Download</a>
+            </div>
+        </div>
+    </body>
+</html>

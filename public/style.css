@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    height: 100%;
+    background-color: #000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container * {
+    padding-top: 10px;
+}
+
+.center-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.big-title {
+    margin: 20px;
+    font-family: "Roboto Mono", monospace;
+    color: white;
+    font-size: 40px;
+}
+
+.small-text {
+    margin: 20px;
+    font-family: "Roboto Mono", monospace;
+    color: white;
+    font-size: 20px;
+}
+
+input,
+input:focus {
+    font-family: "Consolas", monospace;
+    font-size: 15px;
+    resize: none;
+    height: 100%;
+    width: 200px;
+    background-color: #1a1b26;
+    color: rgb(255, 255, 255);
+    border: 1px solid #252636;
+    background: transparent;
+    -webkit-appearance: none;
+    -moz-apperarance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    outline: none;
+    padding: 10px;
+    resize: none;
+    overflow: hidden;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+}
+
+textarea,
+textarea:focus {
+    font-family: "Consolas", monospace;
+    font-size: 15px;
+    height: 100%;
+    width: 100%;
+    resize: none;
+    background-color: #1a1b26;
+    color: #eee;
+    border: none;
+    background: transparent;
+    -webkit-appearance: none;
+    -moz-apperarance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    outline: none;
+    resize: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+    white-space: pre;
+}
+
+::file-selector-button {
+    display: none;
+}
